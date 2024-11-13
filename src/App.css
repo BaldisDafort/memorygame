@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+  gap: 10px;
+  padding: 20px;
+  grid-template-rows: repeat(4, 100px); /* 4 lignes de hauteur fixe */
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Assure que chaque élément prend toute la hauteur de la cellule */
+}
